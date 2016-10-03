@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Oswald';
+@import 'https://fonts.googleapis.com/css?family=Cutive+Mono';
 
 body {
   background: url('bg.jpg') no-repeat center center fixed;
@@ -37,7 +37,7 @@ body {
 }
 
 .timer {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Cutive Mono', monospace;
   font-size: 100px;
   text-align: center;
 }

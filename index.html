@@ -26,18 +26,19 @@
       <div class="flex">
           <select id="tea-type" class="form-control">
             <option>Select a tea...</option>
-            <option data-minutes="2" data-seconds="30">White Tea</option>
-            <option data-minutes="3" data-seconds="00">Chinese Green</option>
-            <option data-minutes="2" data-seconds="30">Japanese Green</option>
-            <option data-minutes="4" data-seconds="00">Black</option>
-            <option data-minutes="4" data-seconds="30">Oolong</option>
-            <option data-minutes="6" data-seconds="30">Herbal</option>
+            <option data-minutes="00" data-seconds="05">TEST</option>
+            <option data-minutes="02" data-seconds="30">White Tea</option>
+            <option data-minutes="03" data-seconds="00">Chinese Green</option>
+            <option data-minutes="02" data-seconds="30">Japanese Green</option>
+            <option data-minutes="04" data-seconds="00">Black</option>
+            <option data-minutes="04" data-seconds="30">Oolong</option>
+            <option data-minutes="06" data-seconds="30">Herbal</option>
           </select>
           <div class="timer-controls">
             <button id="start" class="btn btn-primary btn-md">
               <i class="fa fa-play"></i>
             </button>
-            <button id="stop" class="btn btn-primary btn-md">
+            <button id="stop" class="btn btn-primary btn-md" disabled="disabled">
               <i class="fa fa-stop"></i>
             </button>
           </div> 
@@ -45,7 +46,7 @@
 
       <div class="flex centered">
         <span class="timer">
-          <span class="minutes">00</span> : <span class="seconds">00</span>
+          <span id="minutes">00</span>:<span id="seconds">00</span>
         </span>
       </div>   
     
@@ -55,7 +56,12 @@
 
 <!-- Put JS files here -->
 
-<!-- jQuery -->
+<!-- jQuery (http://jquery.com/)-->
 <script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
-<!--  -->
+<!-- jQuery UI -->
+<script src="https://cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.js"></script>
+<!-- MomentJS (http://momentjs.com/) -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.15.0/moment.min.js"></script>
+<!-- Our app logic -->
+<script src="main.js"></script>
 </html>
