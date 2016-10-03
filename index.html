@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sample Page</title>
+  
+  <!-- Put CSS styles here -->
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Theme for bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css" rel="stylesheet" integrity="sha384-pVJelSCJ58Og1XDc2E95RVYHZDPb9AVyXsI8NoVpB2xmtxoZKJePbMfE4mlXw7BJ" crossorigin="anonymous">
+  <!-- Icons for the Timer -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <!-- Custom Page Styles -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <div class="page-container">
+    <div class="app-container">
+    
+      <h1>Tea Timer</h1>
+      <p class="lead">This timer will help you get the perfect cup of tea.</p>
+
+      <div class="flex">
+          <select id="tea-type" class="form-control">
+            <option>Select a tea...</option>
+            <option data-minutes="2" data-seconds="30">White Tea</option>
+            <option data-minutes="3" data-seconds="00">Chinese Green</option>
+            <option data-minutes="2" data-seconds="30">Japanese Green</option>
+            <option data-minutes="4" data-seconds="00">Black</option>
+            <option data-minutes="4" data-seconds="30">Oolong</option>
+            <option data-minutes="6" data-seconds="30">Herbal</option>
+          </select>
+          <div class="timer-controls">
+            <button id="start" class="btn btn-primary btn-md">
+              <i class="fa fa-play"></i>
+            </button>
+            <button id="stop" class="btn btn-primary btn-md">
+              <i class="fa fa-stop"></i>
+            </button>
+          </div> 
+      </div>
+
+      <div class="flex centered">
+        <span class="timer">
+          <span class="minutes">00</span> : <span class="seconds">00</span>
+        </span>
+      </div>   
+    
+    </div> <!-- end app container -->
+  </div> <!-- end page container -->
+</body>
+
+<!-- Put JS files here -->
+
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+<!--  -->
+</html>
