@@ -110,5 +110,5 @@ function playChime() {
 $(document).ready(function(){
   $("#start")   .click(startTimer);
   $("#stop")    .click(stopTimer);
-  $("#tea-type").click(initializeTimer);
+  $("#tea-type").change(initializeTimer);
 });
